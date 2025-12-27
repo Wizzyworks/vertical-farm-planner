@@ -1,1 +1,50 @@
-
+[
+  {
+    "id": "lettuce_iceberg",
+    "name": "Iceberg Lettuce",
+    "type": "Leafy Green",
+    "growth_cycle_days": 35,
+    "yield_per_sqm_per_cycle": 4.5,
+    "optimal_temp_c": [18, 24],
+    "optimal_humidity_percent": [60, 70],
+    "market_price_per_kg": 3.50,
+    "light_hours_per_day": 16,
+    "variable_cost_per_sqm_cycle": 1.2
+  },
+  {
+    "id": "basil_genovese",
+    "name": "Genovese Basil",
+    "type": "Herb",
+    "growth_cycle_days": 28,
+    "yield_per_sqm_per_cycle": 2.8,
+    "optimal_temp_c": [22, 28],
+    "optimal_humidity_percent": [50, 60],
+    "market_price_per_kg": 12.00,
+    "light_hours_per_day": 18,
+    "variable_cost_per_sqm_cycle": 1.5
+  },
+  {
+    "id": "strawberries_albion",
+    "name": "Albion Strawberries",
+    "type": "Fruiting",
+    "growth_cycle_days": 60,
+    "yield_per_sqm_per_cycle": 1.2,
+    "optimal_temp_c": [18, 22],
+    "optimal_humidity_percent": [65, 75],
+    "market_price_per_kg": 8.00,
+    "light_hours_per_day": 14,
+    "variable_cost_per_sqm_cycle": 2.0
+  },
+    {
+    "id": "microgreens_mix",
+    "name": "Spicy Mix Microgreens",
+    "type": "Microgreen",
+    "growth_cycle_days": 10,
+    "yield_per_sqm_per_cycle": 1.8,
+    "optimal_temp_c": [20, 24],
+    "optimal_humidity_percent": [50, 60],
+    "market_price_per_kg": 35.00,
+    "light_hours_per_day": 16,
+    "variable_cost_per_sqm_cycle": 2.5
+  }
+]

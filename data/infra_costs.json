@@ -1,0 +1,47 @@
+{
+    "systems": {
+        "hydroponic_nft": {
+            "name": "Hydroponic NFT System",
+            "capex_per_sqm": 150.0,
+            "maintenance_annual_percent": 0.05,
+            "description": "Nutrient Film Technique, best for leafy greens."
+        },
+        "aeroponic_tower": {
+            "name": "Aeroponic Towers",
+            "capex_per_sqm": 350.0,
+            "maintenance_annual_percent": 0.07,
+            "description": "Vertical towers, high density for herbs and greens."
+        },
+        "drip_irrigation_rack": {
+            "name": "Drip Irrigation Racks",
+            "capex_per_sqm": 200.0,
+            "maintenance_annual_percent": 0.04,
+            "description": "Multi-tier racks with drip, good for strawberries."
+        }
+    },
+    "environment": {
+        "hvac_standard": {
+            "name": "Standard HVAC",
+            "capex_per_sqm": 80.0,
+            "energy_kwh_per_sqm_day": 0.5
+        },
+        "hvac_climate_control_plus": {
+            "name": "Precision Climate Control",
+            "capex_per_sqm": 180.0,
+            "energy_kwh_per_sqm_day": 0.8
+        },
+        "lighting_led_full_spectrum": {
+            "name": "Full Spectrum LED",
+            "capex_per_sqm": 120.0,
+            "energy_kwh_per_sqm_hour": 0.04
+        }
+    },
+    "labor": {
+        "automation_level": {
+            "low": 1.0,
+            "medium": 0.6,
+            "high": 0.3
+        },
+        "base_hours_per_sqm_year": 20
+    }
+}
