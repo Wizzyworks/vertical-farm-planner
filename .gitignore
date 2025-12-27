@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+venv/
+
+# Environment Variables (CRITICAL)
+.env
+
+# Generated Files
+*.pdf
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
