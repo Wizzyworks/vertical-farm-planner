@@ -1,5 +1,6 @@
 # 🌱 Vertical Farm Planner
 A Pre-Investment Decision Engine for First-Time Vertical Farm Founders in India
+
 📌 Overview
 
 Vertical Farm Planner is a decision-support system designed to help first-time vertical farm founders in India evaluate the technical feasibility, operational costs, yield potential, and ROI before making capital-intensive investments.
@@ -174,6 +175,7 @@ Practical decision intelligence
 
 Piyush Sharma
 AI / ML Engineer
+
 Focused on applied intelligence & decision systems
 
 ⭐ If this project helped you think better before investing — star the repo.
