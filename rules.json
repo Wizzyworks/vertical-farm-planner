@@ -1,0 +1,57 @@
+{
+  "rules": {
+    "space_type": {
+      "greenhouse": {
+        "yield_mult": 1.1,
+        "cost_mult": 0.8,
+        "energy_mult": 0.8,
+        "carbon_adj": -0.2,
+        "features": ["Solar supplement, natural light 50%, raised beds for monsoon"],
+        "best_crops": ["Phase 1 leafy"]
+      },
+      "warehouse": {
+        "yield_mult": 1.0,
+        "cost_mult": 1.3,
+        "energy_mult": 1.2,
+        "carbon_adj": 0.0,
+        "features": ["Full LED, modular stacks, IoT heavy"],
+        "best_crops": ["Phase 1-2, dwarf varieties"]
+      }
+    },
+    "area_thresholds": {
+      "small": {"sqft": 500, "infra": "basic", "tiers": 3},
+      "medium": {"sqft": 2500, "infra": "modular", "tiers": 5},
+      "large": {"sqft": 5000, "infra": "advanced", "tiers": 10}
+    },
+    "budget_filters": {
+      "low": {"max_setup": 200000, "features": ["Basic hydro, Grid"]},
+      "medium": {"max_setup": 500000, "features": ["IoT, Hybrid energy"]},
+      "high": {"max_setup": 1000000, "features": ["DAC, PVT, Biochar"]}
+    },
+    "energy_adjust": {
+      "solar": {"yield_mult": 1.1, "carbon": 0.468, "cost_mult": 0.8},
+      "grid": {"yield_mult": 1.0, "carbon": 5.6, "cost_mult": 1.2},
+      "hybrid": {"yield_mult": 1.05, "carbon": 2.0, "cost_mult": 1.0}
+    },
+    "crop_phases": {
+      "phase1_leafy": {"base_yield_kg_per_500sqft": 15, "cycle_days": 30},
+      "phase2_strawberry": {"base_yield_kg_per_500sqft": 20, "cycle_days": 60}
+    },
+    "boosts": {
+      "co2_700ppm": 1.2,
+      "co2_1000ppm": 1.575,
+      "biochar_3pct": 1.2,
+      "led_opt": 1.3,
+      "weather_rain_adj": {"high": 0.9, "low": 1.0},
+      "soil_moisture_high": 1.2
+    }
+  },
+  "formulas": {
+    "yield_calc": "base_yield * (sqft / 500) * product(boosts) * weather_adj * energy_mult * space_type_yield_mult",
+    "profit_calc": "(yield * sale_price_kg) - (op_cost_month * 12 * energy_mult * space_type_cost_mult + setup / 5)",
+    "npv_5yr": "(profit_yr * 5) - setup * (1 + boosts like PVT 1.57)",
+    "carbon_calc": "yield * carbon_factor * (1 - solar_offset) * space_type_carbon_adj",
+    "roi_pct": "(profit_yr / setup) * 100",
+    "prompt_template": "Using rules/formulas/space_type above, for [inputs]: Apply area/budget/space_type rules, choose from infra options (e.g., low budget: Philips LED). Calc yield/profit/carbon. Specific: Models/qty/timeline, risks, what-ifs. JSON: {{yield, profit, costs_breakdown, plan_details, roi}}"
+  }
+}
