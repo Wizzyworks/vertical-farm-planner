@@ -2,6 +2,7 @@
 
 ## 🌍 The Motivation: Why Vertical Farming?
 As the global population surges towards 10 billion and urbanization accelerates, traditional agriculture faces unprecedented challenges. Arable land is shrinking, water scarcity is intensifying, and climate change is disrupting growing seasons.
+![verticle farming diag-1](https://github.com/user-attachments/assets/44d2f1ca-c197-411c-993f-1cb927ca69c6)
 
 **Vertical Farming** represents the inevitable evolution of agriculture. By moving farms into controlled indoor environments, we can:
 - **Grow anywhere:** From urban centers to deserts.
@@ -80,3 +81,4 @@ The application will open automatically in your default web browser (usually at 
 
 ---
 *Built for the future of food.*
+
